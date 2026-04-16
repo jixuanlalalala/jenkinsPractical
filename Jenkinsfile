@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Checkout') { //change the below path to your repositoy url
+        stage('Checkout') { //change the below path to your repositoy url add more comments
             steps {
                 git branch: 'master', url: 'https://github.com/jixuanlalalala/jenkinsPractical.git'
             }
