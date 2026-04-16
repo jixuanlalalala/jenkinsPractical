@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    environment {// change the below to your jdk path
+    environment {// change the below to your jdk path add comments comments
         JAVA_HOME = "C:\\Program Files\\Java\\jdk-25.0.2"
         PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Checkout') { //change the below path to your repositoy url add more comments
+        stage('Checkout') { //change the below path to your repositoy url 
             steps {
                 git branch: 'master', url: 'https://github.com/jixuanlalalala/jenkinsPractical.git'
             }
